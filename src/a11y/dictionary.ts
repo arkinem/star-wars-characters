@@ -1,7 +1,7 @@
 const dictionary = {
 	"table.heading": "Characters",
 	"table.header.name": "Name",
-	"table.header.birthYear": "Year of Birth",
+	"table.header.birthYear": "Year of birth",
 	"table.header.homeWorld": "Home world",
 	"table.header.noOfFilms": "Film count",
 	"table.error": "Something went wrong, please come back later.",
