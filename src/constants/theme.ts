@@ -9,6 +9,10 @@ export const theme = {
 				hoverBackground: "#080808",
 				activeBackground: "#111111",
 			},
+			loading: {
+				base: "#171717",
+				highlight: "#303030",
+			},
 		},
 	},
 };

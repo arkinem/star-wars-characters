@@ -7,7 +7,7 @@ import { useCharacters } from "hooks/useCharacters";
 import { CharactersTableSortMode } from "constants/table";
 import { selectCharacters } from "selectors/characters";
 import { theme } from "constants/theme";
-import { CharactersTableHeader } from "./CharactersTableHeader";
+import { CharactersTableHeader } from "components/CharactersTableHeader";
 
 const CharactersTable: FC = () => {
 	const { fetchCharacters, isLoading, isError, characters } = useCharacters();
@@ -25,7 +25,10 @@ const CharactersTable: FC = () => {
 
 	const renderLoadingIndicator = useCallback(() => {
 		return (
-			<SkeletonTheme baseColor="#171717" highlightColor="#303030">
+			<SkeletonTheme
+				baseColor={theme.colors.table.loading.base}
+				highlightColor={theme.colors.table.loading.highlight}
+			>
 				{Array.from(Array(20).keys()).map((_, index) => (
 					<TableRow key={index}>
 						<TableCell colSpan={4}>
