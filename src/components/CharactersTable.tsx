@@ -106,9 +106,6 @@ const TableCell = styled.td`
 	padding: 8px;
 	text-align: center;
 	vertical-align: middle;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
 `;
 
 const TableRow = styled.tr`
