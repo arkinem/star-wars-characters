@@ -93,6 +93,7 @@ const TableHeadCellPressable = styled.div<{ disabled: boolean }>`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 
 	:hover {
 		background-color: ${({ disabled }) =>
